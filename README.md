@@ -1,25 +1,76 @@
-# RIOT System – Phase II Calibration and Latency Measurement
+# RIOT System – Phase II Calibration & Phase III Post-Calibration Analysis
 
-This repository contains source code modules used in **Phase II (System Calibration and Testing)** of the RIOT (Rehabilitation Internet-of-Things) research project. The scripts demonstrate hand tracking calibration, gesture recognition, latency measurement, and prototype implementations for volume control using hand gestures.
+This repository contains source code, scripts, and datasets used in **Phase II** (System Calibration) and **Phase III** (Post-Calibration Implementation & Evaluation) for the **RIOT (Rehabilitation Internet-of-Things)** research project.
 
----
-
-## 📂 **Repository Structure**
-
-| File | Description |
-|----------------------|------------------------------------------------------------------|
-| **HandTrackingModule.py** | Core Python module for hand tracking using MediaPipe. Contains functions to detect and annotate hand landmarks in video frames. |
-| **VolumeHandControl.py** | Prototype script to control system volume based on hand gestures using the hand tracking module. |
-| **advancedVolumeHandCtrl.py** | Extended version of the volume control script with additional features (e.g., gesture smoothing, improved detection stability). |
-| **cvcode1.py** | Experimental OpenCV-based script for testing different webcam input configurations and hand detection calibration. |
-| **latencyCalculation.js** | JavaScript snippet used in the RIOT web application to log gesture timestamps in the browser console for latency measurement. Demonstrates real-time detection and performance monitoring in the browser environment. |
+The files demonstrate MediaPipe hand tracking calibration, gesture recognition, latency measurement in browser environments, and analysis of experimental results.
 
 ---
 
-## ⚙️ **How to Use**
+## 📂 Repository Structure
 
-### 1️⃣ Python Modules
+| File | Phase | Description |
+|--------------------------|-----------|--------------------------------------------------------------|
+| **HandTrackingModule.py** | Phase II | Core Python module for real-time hand tracking using MediaPipe. |
+| **VolumeHandControl.py** | Phase II | Prototype: control system volume using hand gestures. |
+| **advancedVolumeHandCtrl.py** | Phase II | Extended volume control with additional features (gesture smoothing, stability). |
+| **cvcode1.py** | Phase II | Experimental OpenCV test for webcam input and calibration checks. |
+| **latencyCalculation.js** | Phase III | JavaScript snippet to log gesture timestamps and calculate latency in the RIOT web app. |
+| **PhaseIII_FinalResult.ipynb** | Phase III | Jupyter Notebook for post-calibration data analysis and results summary. |
+| **analysis_results.xlsx** | Phase III | Raw experimental dataset from Phase III (DoE) runs, accuracy, latency logs, and test outputs. |
 
-- Make sure you have **Python 3.x**, **OpenCV**, and **MediaPipe** installed:
+---
+
+## ⚙️ How to Use
+
+### 🐍 Python Scripts (Phase II)
+
+1. Install dependencies:
+   ```bash
+   pip install opencv-python mediapipe
+   
+2. Run HandTrackingModule.py or use it as a helper:
+
   ```bash
-  pip install opencv-python mediapipe
+  python HandTrackingModule.py
+```
+
+3. Test volume control prototypes:
+
+```bash
+  python VolumeHandControl.py
+  python advancedVolumeHandCtrl.py
+```
+
+4. Experiment with OpenCV
+```bash
+python cvcode1.py
+```
+
+###📊 Jupyter Notebook (Phase III)
+1. Open PhaseIII_FinalResult.ipynb in Jupyter:
+
+```bash
+
+jupyter notebook PhaseIII_FinalResult.ipynb
+```
+2. Run the cells to reproduce data summaries and plots for DoE results.
+
+###🌐 Latency Calculation (Phase III)
+
+Use latencyCalculation.js inside the RIOT web application:
+
+1. Open browser console.
+
+2. Paste the script.
+
+3. Perform gestures.
+
+4. View console logs for timestamps & latency.
+
+📁 Data Files
+analysis_results.xlsx contains the complete raw DoE data and recorded results for Phase II.
+
+All data used matches the performance tables and figures reported in the thesis.
+
+🔒 Note: No personal or sensitive user data is included.
+
