@@ -10,13 +10,14 @@ The files demonstrate MediaPipe hand tracking calibration, gesture recognition, 
 
 | File | Phase | Description |
 |--------------------------|-----------|--------------------------------------------------------------|
+| **analysis_results.xlsx** | Phase II | Raw experimental dataset from Phase III (DoE) runs, accuracy, latency logs, and test outputs. |
 | **HandTrackingModule.py** | Phase II | Core Python module for real-time hand tracking using MediaPipe. |
 | **VolumeHandControl.py** | Phase II | Prototype: control system volume using hand gestures. |
 | **advancedVolumeHandCtrl.py** | Phase II | Extended volume control with additional features (gesture smoothing, stability). |
 | **cvcode1.py** | Phase II | Experimental OpenCV test for webcam input and calibration checks. |
 | **latencyCalculation.js** | Phase III | JavaScript snippet to log gesture timestamps and calculate latency in the RIOT web app. |
 | **PhaseIII_FinalResult.ipynb** | Phase III | Jupyter Notebook for post-calibration data analysis and results summary. |
-| **analysis_results.xlsx** | Phase III | Raw experimental dataset from Phase III (DoE) runs, accuracy, latency logs, and test outputs. |
+
 
 ---
 
