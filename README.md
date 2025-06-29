@@ -10,7 +10,7 @@ The files demonstrate MediaPipe hand tracking calibration, gesture recognition, 
 
 | File | Phase | Description |
 |--------------------------|-----------|--------------------------------------------------------------|
-| **analysis_results.xlsx** | Phase II | Raw experimental dataset from Phase III (DoE) runs, accuracy, latency logs, and test outputs. |
+| **analysis_results.xlsx** | Phase II | Raw experimental dataset from Phase II (DoE). |
 | **HandTrackingModule.py** | Phase II | Core Python module for real-time hand tracking using MediaPipe. |
 | **VolumeHandControl.py** | Phase II | Prototype: control system volume using hand gestures. |
 | **advancedVolumeHandCtrl.py** | Phase II | Extended volume control with additional features (gesture smoothing, stability). |
